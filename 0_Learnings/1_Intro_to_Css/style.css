@@ -1,0 +1,67 @@
+
+/* 
+    url: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units
+*/
+
+/* universal selector */
+* {
+    background-color: grey;
+}
+
+/* type selector */
+div {
+    background-color: yellowgreen;
+}
+
+/* class selector */
+.division {
+    background-color: black;
+}
+
+/* id selector */
+#para {
+    background-color: green;
+}
+
+/*
+    The major difference between classes and IDs is that an element can only have one ID. It cannot be repeated on a single page and should not contain any whitespace
+*/
+
+/*-------------------------------------------------------------------*/
+
+/* grouping selector */
+.first-para,
+.second-para {
+    background-color: brown;
+}
+
+.first-para {
+    color: blue;
+}
+
+.second-para {
+    color: blue;
+}
+
+/*-------------------------------------------------------------------*/
+/* chaining selector */
+.subsection.header {
+    color: red;
+}
+
+.subsection#preview {
+    color: blue;
+}
+
+/*-------------------------------------------------------------------*/
+/* cascade */
+/* 1. Specificity */
+/* rule 1 */
+.subsection {
+  color: blue;
+}
+
+/* rule 2 */
+.main .list {
+  color: red;
+}

@@ -1,0 +1,41 @@
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #474d61;
+}
+
+.outer-card {
+    margin: 40px;
+    background-color: #f2d279;
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    color: #474d61;
+}
+
+.rec1,
+.rec2,
+.rec3,
+.rec4 {
+    padding: 14px;
+    background-color: #b9d6a5;
+    margin: 14px;
+    border: 1px solid black;
+}
+
+img {
+    border: 1px solid black;
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+}
+
+.image{
+    justify-content: center;
+    display: flex;
+}
