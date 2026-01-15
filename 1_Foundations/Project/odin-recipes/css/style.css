@@ -8,24 +8,41 @@ h1 {
 }
 
 .outer-card {
-    margin: 40px;
+    margin: 40px auto;
     background-color: #f2d279;
-    padding: 20px;
-    text-align: center;
+    padding: 40px;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
 }
+
 
 a {
+    display: block;      /* Makes the whole box clickable, not just the text */
+    padding: 15px 20px;  /* Padding inside the button */
     color: #474d61;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
-.rec1,
-.rec2,
-.rec3,
-.rec4 {
-    padding: 14px;
-    background-color: #b9d6a5;
-    margin: 14px;
-    border: 1px solid black;
+.recipe-card {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #e0c060;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-3px); /* Moves up slightly */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds shadow */
+    border-color: #007bff;
 }
 
 img {
@@ -39,3 +56,34 @@ img {
     justify-content: center;
     display: flex;
 }
+
+.home-link {
+    display: inline-block;
+    margin: 20px 0;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.home-link a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.home-link:hover {
+    background-color: #007bff;
+}
+
+.home-link:hover a{
+    color: white;
+}
+
+.disc-dish {
+    border: 2px solid #f7b707;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+
