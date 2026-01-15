@@ -1,0 +1,62 @@
+body {
+    min-height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+
+h1 {
+    color: white;
+    padding: 12px;
+}
+
+.header {
+    background-color: purple;
+}
+
+.links {
+    background-color: blue;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 12px;
+    /* mistake use flex-shrink */
+    flex-shrink: 0;
+}
+
+.content {
+    padding: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info {
+  padding: 20px;
+  background: #eee;
+  border-radius: 12px;
+  text-align: center;
+}
+
+
+.footer {
+    background-color: #dce0dd;
+    padding: 14px;
+    text-align: center;
+}
+
+.links-and-content {
+    flex-grow: 1;
+    display: flex;
+}
+
