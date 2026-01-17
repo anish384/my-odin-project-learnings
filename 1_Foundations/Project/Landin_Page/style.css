@@ -1,0 +1,233 @@
+/* * { */
+/*     font-family: 'Roboto', sans-serif; */
+/*     margin: 0; */
+/*     padding: 0; */
+/* } */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.links a {
+    color: #e5e7eb;
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #1f2937;
+    display: flex;
+    flex-direction: column;
+}
+
+.header .logo h1{
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+.header-first,
+.header-second {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-first {
+    padding: 24px;
+}
+
+.header-second {
+    padding: 80px 24px;
+    gap: 48px;
+}
+
+.header-second .header-content {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.header-second .header-content h1 {
+    color: #f9faf8;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+
+.header-second .header-content p {
+    color: #e5e7eb;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.header-second .header-content button {
+    background-color: #3882f6;
+    color: white;
+    border: 1px solid black;
+    border-radius: 9px;
+    padding: 8px 20px;
+    width: fit-content;
+}
+
+.header-second .header-image img {
+    height: 230px;
+    width: 500px;
+}
+
+/* content */
+.content {
+    flex: 1;
+    margin-top: 12px;
+}
+
+.content .content-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 0 96px;
+}
+
+.content .content-1 h1 {
+    color: #1f2937;
+    padding: 14px;
+    font-size: 36px;
+    margin-bottom: 48px;
+}
+
+.content .content-1 .c1-card img {
+    height: 150px;
+    width: 150px;
+
+    border: 3px solid blue;
+    border-radius: 12px;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    text-align: center;
+    gap: 8px;
+
+}
+
+.content .content-1 .c1-card {
+    display: flex;
+    gap: 52px;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+/* content-2 */
+.content-2 {
+    background-color: #e5e7eb;
+    padding: 100px 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.content-2 .quote {
+    max-width: 850px;
+}
+
+.content-2 .quote h3 {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.content-2 .quote .sayedby {
+    margin-top: 16px;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+}
+
+/* content-3 */
+.content-3 {
+    padding: 80px 80px 80px 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-3 .c3-box {
+    background-color: #3b82f6;
+    width: 70%;
+    padding: 34px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    gap: 200px;
+}
+
+.content-3 .c3-box h3 {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.content-3 .c3-box p {
+    color: #c1d2ed;
+}
+
+.content-3 button {
+    padding: 2px 12px;
+    width: 12%;
+    background-color: #3b82f6;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+
+.footer {
+    background-color: #1f2937;
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Media Query for Tablets and Mobile Phones */
+@media (max-width: 800px) {
+    .header-second {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;     /* Center the text */
+        padding: 40px 20px;     /* Reduce the huge padding */
+        gap: 32px;              /* Reduce the gap */
+    }
+
+    /* Make the buttons center themselves */
+    .header-second .header-content {
+        align-items: center; 
+    }
+}
